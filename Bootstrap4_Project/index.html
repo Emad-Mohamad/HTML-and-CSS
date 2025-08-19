@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emad Mohamad's Movie Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .jumbotron-custom {
+            background: linear-gradient(135deg, #e0e0e0, #f8f9fa);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Emad Mohamad</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#showtimes">Showtimes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Jumbotron -->
+<div class="container">
+    <div class="jumbotron-custom">
+        <h1 class="display-4">Welcome to Emad Mohamad's Movie website</h1>
+        <p class="lead">Your place for the latest Movies and great deals!</p>
+    </div>
+</div>
+
+<!-- About Section -->
+<section id="about" class="container mb-5">
+    <h2>About</h2>
+    <p>Welcome to Emad's Movie Website – the best place to catch your favorite films in a cozy, modern setting. Enjoy top-tier visuals, surround sound, and the latest movies all in one place!</p>
+</section>
+
+<!-- Showtimes Section -->
+<section id="showtimes" class="container mb-5">
+    <h2 class="mb-4">Now Showing</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Movie 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTcwMjcxYTQtYjJlOS00YTE1LWIyZGYtOGRlOTBlMWZmYTliXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Kong: Skull Island">
+                <div class="card-body">
+                    <h5 class="card-title">Kong: Skull Island</h5>
+                    <p class="card-text">A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong and uncovering secrets beyond imagination.</p>
+                    <span class="badge rounded-pill bg-info">12:00 p.m.</span>
+                    <span class="badge rounded-pill bg-info">1:30 p.m.</span>
+                    <span class="badge rounded-pill bg-info">3:00 p.m.</span>
+                    <span class="badge rounded-pill bg-info">5:30 p.m.</span>
+                    <span class="badge rounded-pill bg-info">7:00 p.m.</span>
+                    <span class="badge rounded-pill bg-info">9:30 p.m.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzBkNjdjZTctNjdhOS00NmIyLTlkNjQtY2EwNGMwYmZjNTIxXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Ghost in the Shell">
+                <div class="card-body">
+                    <h5 class="card-title">Ghost in the Shell</h5>
+                    <p class="card-text">In a future world where cybernetic enhancements are the norm, a unique soldier fights to reclaim her past and uncover a dark corporate conspiracy.</p>
+                    <span class="badge rounded-pill bg-info">12:00 p.m.</span>
+                    <span class="badge rounded-pill bg-info">1:30 p.m.</span>
+                    <span class="badge rounded-pill bg-info">3:00 p.m.</span>
+                    <span class="badge rounded-pill bg-info">5:30 p.m.</span>
+                    <span class="badge rounded-pill bg-info">7:00 p.m.</span>
+                    <span class="badge rounded-pill bg-info">9:30 p.m.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg" class="card-img-top" alt="Beauty and the Beast">
+                <div class="card-body">
+                    <h5 class="card-title">Beauty and the Beast</h5>
+                    <p class="card-text">A beautiful young woman discovers that love can be found in the most unexpected places, in this live-action adaptation of the beloved Disney classic.</p>
+                    <span class="badge rounded-pill bg-info">12:00 p.m.</span>
+                    <span class="badge rounded-pill bg-info">1:30 p.m.</span>
+                    <span class="badge rounded-pill bg-info">3:00 p.m.</span>
+                    <span class="badge rounded-pill bg-info">5:30 p.m.</span>
+                    <span class="badge rounded-pill bg-info">7:00 p.m.</span>
+                    <span class="badge rounded-pill bg-info">9:30 p.m.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Deals Section -->
+<section id="deals" class="container mb-5">
+    <h2>Deals</h2>
+    <p>🎟️ Student Tuesday Special – 50% off all tickets!<br>🍿 Free popcorn with any drink purchase on weekends!<br>🎬 Loyalty members get a free movie every 5 visits.</p>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center p-3">
+    <p>&copy; 2025 Emad Mohamad's Movie Theater. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
