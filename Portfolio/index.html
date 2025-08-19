@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emad Mohamad Portfolio</title>
+<style>
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 1rem 0;
+    z-index: 1000;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    margin: 0 20px;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px 60px;
+    background: #222;
+}
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Image Section */
+.image-section {
+    text-align: center;
+    margin: 40px 0;
+}
+.filtered-img {
+    width: 300px;
+    border-radius: 20px;
+    filter: grayscale(40%) brightness(1.1);
+}
+
+/* Text Over Image */
+.text-over-image {
+    position: relative;
+    text-align: center;
+    margin: 40px 0;
+}
+.text-over-image img {
+    width: 100%;
+    height: auto;
+}
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+}
+
+/* Table Styles */
+.table-section {
+    padding: 40px;
+    text-align: center;
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+th, td {
+    border: 2px solid #444;
+    padding: 12px;
+}
+th {
+    background-color: #333;
+}
+
+/* Two Columns */
+.two-column {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+.column {
+    width: 45%;
+    height: 200px;
+    color: #ddd;
+    background-color: #2a2a2a;
+    padding: 20px;
+}
+
+/* Hover Paragraph */
+.hover-paragraph {
+    text-align: center;
+    font-size: 18px;
+    margin: 40px;
+    transition: color 0.3s ease;
+}
+.hover-paragraph:hover {
+    color: #00bcd4;
+}
+
+/* Image Overlay Fade */
+.overlay-container {
+    position: relative;
+    width: 60%;
+    margin: 40px auto;
+}
+.overlay-container img {
+    width: 100%;
+    display: block;
+    transition: 0.5s ease;
+    border-radius: 10px;
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+.overlay-container:hover .overlay-text {
+    opacity: 1;
+    pointer-events: auto;
+}
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.video-section video {
+    width: 100%;
+    height: auto;
+}
+.video-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#table">Skills Table</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Emad Mohamad</h1>
+        <p>Aspiring Developer | Tech Enthusiast</p>
+    </section>
+
+    <!-- Centered Image with Filter and Rounded Edges -->
+    <section class="image-section">
+        <img src="https://cdn.pixabay.com/photo/2016/11/18/18/37/programming-1836330_1280.png" alt="Programming" class="filtered-img">
+    </section>
+
+    <!-- Text Over Image -->
+    <section class="text-over-image">
+        <img src="https://cdn.pixabay.com/photo/2016/11/18/18/37/programming-1836330_1280.png" alt="Coding">
+        <div class="centered-text">Code Like a Beast</div>
+    </section>
+
+    <!-- Table Section -->
+    <section id="table" class="table-section">
+        <h2>Skills Table</h2>
+        <table>
+            <tr>
+                <th>Language</th>
+                <th>Proficiency</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Intermediate</td>
+            </tr>
+           
+        </table>
+    </section>
+
+    <!-- Two Column Layout -->
+    <section class="two-column">
+        <div class="column">Hardworking and focused.</div>
+        <div class="column">A confident communicator and aspiring team leader.</div>
+    </section>
+
+    <!-- Hoverable Paragraph -->
+    <section>
+        <p class="hover-paragraph">Hover over this paragraph to see the effect.</p>
+    </section>
+
+    <!-- Image Overlay Fade -->
+    <section class="image-overlay-section">
+        <div class="overlay-container">
+            <img src="https://cdn.pixabay.com/photo/2016/11/18/18/37/programming-1836330_1280.png" alt="Overlay Image">
+            <div class="overlay-text">Smooth Overlay</div>
+        </div>
+    </section>
+
+    <!-- Autoplay Video with Text Overlay -->
+    <section id="video" class="video-section">
+        <video autoplay muted loop>
+            <source src="https://cdn.pixabay.com/video/2015/08/08/117-135736418_tiny.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-text">Welcome to My World</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Emad Mohamad | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
